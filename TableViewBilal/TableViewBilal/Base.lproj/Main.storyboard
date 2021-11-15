@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p3i-uK-hth">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" textLabel="GtY-nX-XfU" style="IBUITableViewCellStyleDefault" id="wQI-jB-x01">
@@ -49,7 +49,15 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p3i-uK-hth" secondAttribute="bottom" id="nHG-Hr-vfh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aOb-cC-UB4"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="aOb-cC-UB4">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="8TQ-1q-kiT">
+                            <connections>
+                                <action selector="addButtonFunction:" destination="BYZ-38-t0r" id="U0P-lh-mcn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="MyTableView" destination="p3i-uK-hth" id="CEE-1R-3C2"/>
                     </connections>
