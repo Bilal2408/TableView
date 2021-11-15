@@ -65,8 +65,15 @@ class ViewController: UIViewController {
             }
         })
         
+        
+        // Abbrechen Button für das Alert
+        let action1 = UIAlertAction(title: "Abbrechen", style: .default, handler: { (action) in 
+        })
+        
+        
         //Dem Alert die Action zuweisen
         alert.addAction(action)
+        alert.addAction(action1)
         
         //Dem Alert das TextField zuweisen
         alert.addTextField(configurationHandler: { (alertTextField) in
@@ -79,6 +86,7 @@ class ViewController: UIViewController {
         
         //Den Alert anzeigen (presenten)
         present(alert, animated: true, completion: nil)
+        
     }
 }
 
